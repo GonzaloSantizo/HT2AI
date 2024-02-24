@@ -118,7 +118,9 @@ def run_policy(env, policy, start_state):
     states.append(next_state)
     return total_reward, states
 
-env = generate_environment()
+seed = 12543  
+
+env = generate_environment(seed) 
 policy = calculate_policy(env)
 
 start_state = (0, 0)
